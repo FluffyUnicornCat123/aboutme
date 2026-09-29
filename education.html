@@ -1,14 +1,52 @@
-﻿<!DOCTYPE html>
-
+<!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet"  href="my_style_sheet.css">
-    <title> Education </title>
+    <link rel="stylesheet" href="my_style_sheet.css">
+    <title>Education</title>
+    <style> 
+      body {
+        margin: 0; 
+        min-height: 100vh; 
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+        /* Cleaned up background properties and fixed syntax typos */
+        background-image: url('meow.gif'); 
+        background-size: cover; 
+        background-repeat: no-repeat;
+        color: white; 
+        font-family: 'Georgia', 'Times New Roman', serif;
+        padding-top: 20px; /* Gives top elements spacing from browser border */
+      } 
+      table { 
+        border-spacing: 10px; 
+      } 
+      button { 
+        padding: 10px 20px; 
+        font-size: 16px; 
+        cursor: pointer; 
+        font-style: italic;
+      } 
+    </style> 
+</head> 
+<body> 
 
-<body style="background-image: url('meow.gif'); background size: cover; backgroud-repeat: no repeat;">
+  <!-- Image --> 
+  <img src="bow.gif" width="100" height="100" alt="Bow"> 
 
-     <h6 style="
+  <!-- Table of buttons (Text fixed so it renders) --> 
+  <table> 
+    <tr> 
+      <td><a href="index.html"><button>Homepage ♡</button></a></td> 
+      <td><a href="hobbies.html"><button>Hobbies ♡</button></a></td> 
+      <td><a href="education.html"><button>Education ♡</button></a></td> 
+      <td><a href="contact.html"><button>Contact ♡</button></a></td> 
+    </tr> 
+  </table>
+
+  <!-- Main Heading -->
+  <h6 style="
     font-family: 'Brush Script MT', 'Arial Narrow', Arial, sans-serif; 
     font-size: 45px; 
     text-align: center;
@@ -16,43 +54,28 @@
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-">
-  My education
-</h6>  
- </table>
-    <table cellspacing="10">
-        <tr>
-            <td>
-                <a href="index.html"><button> 𝐻𝑜𝓂𝑒𝓅𝒶𝑔𝑒 ♡</button></a> 
-            </td>
-            <td>
-                <a href="hobbies.html"><button> 𝐻𝑜𝒷𝒷𝒾𝑒𝓈 ♡</button></a>
-            </td>
-            <td>
-                <a href="education.html"><button> 𝐸𝒹𝓊𝒸𝒶𝓉𝒾𝑜𝓃 ♡</button></a>
+    margin-top: 40px;
+    margin-bottom: 20px;
+  ">
+    My education
+  </h6>  
 
-            </td>
-            <td>
-                <a href="contact.html"><button> 𝒞𝑜𝓃𝓉𝒶𝒸𝓉 ♡</button></a>
+  <!-- Content Description (Changed invalid h7 to a clean styled paragraph) -->
+  <p style="
+    font-family: 'Brush Script MT', 'Arial Narrow', Arial, sans-serif; 
+    color: white; 
+    font-size: 45px; 
+    text-align: center;
+    max-width: 800px;
+    line-height: 1.4;
+    margin: 20px auto;
+  ">
+    For education I'm doing BTEC Level 3 Technology.<br>
+    For the future I hope to do game development.
+  </p>
 
-            </td>
-
-        </tr>
-
-    </table>
-    <hr color="white">
-
-</head>
-<body>
-
-<h7 style="font-family:'Brush Script MT', 'Arial Narrow', Arial, sans-serif; color: white; font-size: 45px; text-align: center;">
-  For education im doing btec level 3 technology
- for the future i hope to do game development </h7>
-  <img src="love.gif" width="200" height="200" />
-
-    <table cellspacing="10"> 
-
-    </table>
+  <!-- Bottom Image -->
+  <img src="love.gif" width="200" height="200" alt="Love" />
 
 </body>
 </html>
