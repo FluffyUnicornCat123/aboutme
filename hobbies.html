@@ -1,69 +1,117 @@
-﻿<!DOCTYPE html>
-
+<!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet"  href="my_style_sheet.css">
-    <title> hobbies </title>
-</head>
+    <link rel="stylesheet" href="my_style_sheet.css">
+    <title>Hobbies</title>
+    <style> 
+      body {
+        margin: 0; 
+        min-height: 100vh; 
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+        color: white; 
+        font-family: 'Georgia', 'Times New Roman', serif;
+        padding-top: 20px; /* Gives the top bow breathing room */
 
-<h3 style="
-    font-family: 'Brush Script MT', 'Arial Narrow', Arial, sans-serif; 
-    font-size: 45px; 
-    text-align: center;
-    background: linear-gradient(to bottom, #ffe9ec, #FFFFFF);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-">
-  My hobbies :)
-</h3>
+        /* --- RESTORED HOMEPAGE BACKGROUND FIX --- */
+        background-image: url('meow.gif'); 
+        background-size: cover; 
+        background-repeat: no-repeat;
+        background-attachment: fixed; /* Keeps background locked and correctly proportioned when scrolling */
+      } 
+      table { 
+        border-spacing: 10px; 
+      } 
+      button { 
+        padding: 10px 20px; 
+        font-size: 16px; 
+        cursor: pointer; 
+        font-style: italic;
+      } 
+    </style> 
+</head> 
+<body> 
 
-      </table>
-    <table cellspacing="10">
-        <tr>
-            <td>
-                <a href="index.html"><button> 𝐻𝑜𝓂𝑒𝓅𝒶𝑔𝑒 ♡</button></a> 
-            </td>
-            <td>
-                <a href="hobbies.html"><button> 𝐻𝑜𝒷𝒷𝒾𝑒𝓈 ♡</button></a>
-            </td>
-            <td>
-                <a href="education.html"><button> 𝐸𝒹𝓊𝒸𝒶𝓉𝒾𝑜𝓃 ♡</button></a>
+  <!-- Image --> 
+  <img src="bow.gif" width="100" height="100" alt="Bow"> 
 
-            </td>
-            <td>
-                <a href="contact.html"><button> 𝒞𝑜𝓃𝓉𝒶𝒸𝓉 ♡</button></a>
+  <!-- Table of buttons (Fixed script text to standard text so it displays) --> 
+  <table> 
+    <tr> 
+      <td><a href="index.html"><button>Homepage ♡</button></a></td> 
+      <td><a href="hobbies.html"><button>Hobbies ♡</button></a></td> 
+      <td><a href="education.html"><button>Education ♡</button></a></td> 
+      <td><a href="contact.html"><button>Contact ♡</button></a></td> 
+    </tr> 
+  </table>
 
-            </td>
+  <!-- Main Title -->
+  <h3 style="
+      font-family: 'Brush Script MT', 'Arial Narrow', Arial, sans-serif; 
+      font-size: 45px; 
+      text-align: center;
+      background: linear-gradient(to bottom, #ffe9ec, #FFFFFF);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-top: 30px;
+  ">
+    My hobbies :)
+scroll down!
+  </h3>
 
-        </tr>
+  <!-- Hobbies List --><ol style=" font-family: 'Brush Script MT', 'Arial Narrow', Arial, sans-serif; font-size: 40px; width: max-content; margin: 20px auto; background: linear-gradient(to bottom, #ffe9ec, #FFFFFF); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; display: flex; flex-direction: column; align-items: center; list-style-type: none; padding: 0; "> 
+  <!-- Item 1: Roblox --> 
+  <li style="display: flex; flex-direction: column; align-items: center; margin-bottom: 30px;"> 
+    <div style="display: flex; align-items: center; gap: 10px;"> 
+      <span style="display: inline-block;">1. </span> 
+      <div>Roblox</div> 
+    </div> 
+    <div style="display: flex; justify-content: center; gap: 15px; margin-top: 15px;"> 
+      <img src="robloxfit1.png" style="height: 250px; width: auto; object-fit: contain;"/> 
+      <img src="robloxfit2.png" style="height: 250px; width: auto; object-fit: contain;"/> 
+    </div> 
+  </li> 
 
-    </table>
-    <hr color="white">
-<body style="background-image: url('meow.gif'); background size: cover; backgroud-repeat: no repeat;">
-       
+  <!-- Item 2: Creating OCs --> 
+  <li style="display: flex; flex-direction: column; align-items: center; margin-bottom: 30px;"> 
+    <div style="display: flex; align-items: center; gap: 10px;"> 
+      <span style="display: inline-block;">2. </span> 
+      <div>Creating OCs</div> 
+    </div> 
+    <div style="display: flex; justify-content: center; gap: 15px; margin-top: 15px;"> 
+      <img src="3doc.png" style="height: 250px; width: auto; object-fit: contain;"/> 
+      <img src="3doc2.png" style="height: 250px; width: auto; object-fit: contain;"/> 
+    </div> 
+  </li> 
 
-<h4>
+  <!-- Item 3: Art --> 
+  <li style="display: flex; flex-direction: column; align-items: center; margin-bottom: 30px;"> 
+    <div style="display: flex; align-items: center; gap: 10px;"> 
+      <span style="display: inline-block;">3. </span> 
+      <div>Art</div> 
+    </div> 
+    <div style="display: flex; justify-content: center; gap: 15px; margin-top: 15px;"> 
+      <!-- Height bumped to 350px to make the images larger --> 
+      <img src="myart1.png" style="height: 350px; width: auto; object-fit: contain;"/> 
+      <img src="myart2.png" style="height: 350px; width: auto; object-fit: contain;"/> 
+    </div> 
+  </li> 
 
-<ol style="
-    font-family: 'Brush Script MT', 'Arial Narrow', Arial, sans-serif; 
-    font-size: 40px; 
-    width: max-content;
-    margin: 0 auto;
-    background: linear-gradient(to bottom, #ffe9ec, #FFFFFF);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-">
-    <li>Exploring new areas</li>
-    <li>Horror or sci-fi movies</li>
-    <li>Competitive and building games</li>
+  <!-- Item 4 --> 
+  <li style="text-align: center; margin-bottom: 30px;"> 
+    <span>4. </span>Horror or sci-fi movies 
+  </li> 
+
+  <!-- Item 5 --> 
+  <li style="text-align: center;"> 
+    <span>5. </span>Competitive and building games 
+  </li> 
 </ol>
-</h4>
-
-
-  <img src="happy.gif" width="500" height="500" style="margin-top: -150px;" />
+  <!-- Bottom Image -->
+  <img src="happy.gif" width="500" height="500" style="margin-top: -50px;" alt="Happy" />
 
 </body>
 </html>
